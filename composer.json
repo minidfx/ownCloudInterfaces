@@ -1,5 +1,5 @@
 {
-  "name": "minidfx/ownCloudInterfaces",
+  "name": "minidfx/owncloud-interfaces",
   "description": "Contains interfaces of ownCloud version 7. Package useful for mocking ownCloud dependencies in unit tests.",
   "version": 0.1,
   "keywords": [
