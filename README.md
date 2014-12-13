@@ -1,4 +1,4 @@
 ownCloudInterfaces
 ==================
 
-Contains interfaces of the currently ownCloud version
+Contains interfaces of ownCloud version 7. Package useful for mocking ownCloud dependencies in unit tests.
