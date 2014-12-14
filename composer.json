@@ -23,6 +23,10 @@
     "php": ">=5.3.2"
   },
   "autoload": {
-    "classmap": ["core/"]
+    "classmap": ["core/"],
+    "files": [
+      "core/lib/private/user/interface.php",
+      "core/lib/private/group/interface.php"
+    ]
   }
 }
