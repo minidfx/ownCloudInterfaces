@@ -1,7 +1,7 @@
 {
   "name": "minidfx/owncloud-interfaces",
   "description": "Contains interfaces of ownCloud version 7. Package useful for mocking ownCloud dependencies in unit tests.",
-  "version": 0.1,
+  "version": 0.2,
   "keywords": [
     "ownCloud",
     "interface",
@@ -16,13 +16,13 @@
       "homepage": "http://blog.couloir42.ch"
     }
   ],
+  "support": {
+    "issues": "https://github.com/minidfx/ownCloudInterfaces/issues"
+  },
   "require": {
     "php": ">=5.3.2"
   },
   "autoload": {
-    "psr-0": {
-      "OC": "core/lib/private",
-      "OCP": "core/lib/public"
-    }
+    "classmap": ["core/"]
   }
 }
