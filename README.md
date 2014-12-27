@@ -7,7 +7,7 @@ Contains interfaces and constants of ownCloud version 7. Package very useful for
 
 The dev version can be easily installed through composer.
 
-    composer require minidfx/ownCloudInterface
+    composer require minidfx/owncloud-interfaces
     
 or add these line into your composer.json
 
