@@ -9,7 +9,7 @@ The dev version can be easily installed through composer.
 
     composer require minidfx/owncloud-interfaces
     
-or add these line into your composer.json
+or add these lines into your composer.json
 
     {
       "require-dev": {
