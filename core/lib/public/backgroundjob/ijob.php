@@ -1,13 +1,34 @@
 <?php
 /**
- * Copyright (c) 2014 Robin Appelman <icewind@owncloud.com>
- * This file is licensed under the Affero General Public License version 3 or
- * later.
- * See the COPYING-README file.
+ * @author Morris Jobke <hey@morrisjobke.de>
+ * @author Robin Appelman <icewind@owncloud.com>
+ * @author Scrutinizer Auto-Fixer <auto-fixer@scrutinizer-ci.com>
+ *
+ * @copyright Copyright (c) 2015, ownCloud, Inc.
+ * @license AGPL-3.0
+ *
+ * This code is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Affero General Public License, version 3,
+ * as published by the Free Software Foundation.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU Affero General Public License for more details.
+ *
+ * You should have received a copy of the GNU Affero General Public License, version 3,
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>
+ *
  */
 
 namespace OCP\BackgroundJob;
 
+/**
+ * Interface IJob
+ *
+ * @package OCP\BackgroundJob
+ * @since 7.0.0
+ */
 interface IJob {
 	/**
 	 * Run the background job with the registered argument
@@ -15,6 +36,7 @@ interface IJob {
 	 * @param \OCP\BackgroundJob\IJobList $jobList The job list that manages the state of this job
 	 * @param \OC\Log $logger
 	 * @return void
+	 * @since 7.0.0
 	 */
 	public function execute($jobList, $logger = null);
 
@@ -23,6 +45,7 @@ interface IJob {
 	 * This id is determined by the job list when a job is added to the list
 	 *
 	 * @return int
+	 * @since 7.0.0
 	 */
 	public function getId();
 
@@ -30,6 +53,7 @@ interface IJob {
 	 * Get the last time this job was run as unix timestamp
 	 *
 	 * @return int
+	 * @since 7.0.0
 	 */
 	public function getLastRun();
 
@@ -38,6 +62,7 @@ interface IJob {
 	 * This is the argument that will be passed to the background job
 	 *
 	 * @return mixed
+	 * @since 7.0.0
 	 */
 	public function getArgument();
 }
